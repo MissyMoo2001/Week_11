@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--two style sheets, one for basic bootstrap, second for game specific styling-->
     <title>Document</title>
 </head>
 <body class="container text-bg-success-subtle">
@@ -12,9 +13,10 @@
         <div class="card-header" style="background-color: #81c0ff;">
         Tic-Tac-Toe!!
         </div>
+        <!--instructions in the event someone does not know how to play-->
         Rules of the game: Two players will take turns placing either an "X" or an "O" on the three by three board below. The first player to place three in a row wins the game! if the board is full and no winner is determined, the game ends in a draw.
     </div><br>
-
+    <!--basic html creating a space for the game to operate in-->
     <div class="card" style="background-color: #97cbff;" style="border-radius: 5px;">
         <h1 id="turn-indicator" style="background-color: #81c0ff; padding-left:5px;">X's Turn</h1>
         <div id="grid" class="grid" style="border-color: #dee2e6; padding-bottom: 5px;"></div>

@@ -5,7 +5,7 @@ const grid = document.getElementById("grid");
   let board = Array(9).fill(null);
   let currentPlayer = "X";
   let gameOver = false;
-
+    //game starts with empty board, x always goes first
   function createGrid() {
     const grid = document.getElementById("grid"); console.log("Grid element:", grid); // Debug
     grid.innerHTML = "";
@@ -18,7 +18,7 @@ const grid = document.getElementById("grid");
       console.log("Added cell:", cell);
     });
   }
-
+  //java script automatically switches turns for the players, three possible endings based on final turn(unless player gets three before board is full)
   function handleMove(index) {
     if (board[index] || gameOver) return;
 
@@ -47,7 +47,7 @@ const grid = document.getElementById("grid");
       board[a] && board[a] === board[b] && board[a] === board[c]
     );
   }
-
+  //final function for the button that resets the entire board for an eternity of fun
   function resetGame() {
     board = Array(9).fill(null);
     currentPlayer = "X";
